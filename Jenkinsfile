@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('Test Example Form') {
+    stage('Qxf2: POM') {
       parallel {
         stage('Test Example Form') {
           steps {
