@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Test Example Table') {
           steps {
-            bat 'C:\\Python27\\python.exe tests\\test_example_table.py -B Chrome '
+            bat(script: 'C:\\Python27\\python.exe tests\\test_example_table.py -B Chrome ', returnStatus: true)
           }
         }
       }
